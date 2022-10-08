@@ -1,0 +1,118 @@
+$main-font: 'Source Sans Pro', sans-serif;
+
+$title-font: 'Poppins', sans-serif;
+
+$txt-color: #FFFFFF;
+$bg-color: #000000;
+
+
+
+body {
+    
+    background-color: $bg-color;
+    margin: auto;
+    max-width: 1440px;
+    width:100%;
+    min-height: 810px;
+}
+
+
+/*________________________________________________HEADER____________________________________________*/
+
+.header {
+    max-width: 864px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .header__logo {
+        display:flex;
+        justify-self: flex-start;
+        margin: 10px;
+    }
+
+        .logo--sizing {
+            width: 90px;
+            height: 36px;
+        }
+
+
+
+    .header__nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 1;
+        align-items: center;
+    }
+        .header__nav--ul {
+            display: flex;
+        flex-wrap: wrap;
+        flex-basis: 1;
+        align-items: center;
+
+            list-style: none;
+            list-style-type: none;
+            color: $txt-color;
+        }
+            .header__nav--li {
+                font-family: $main-font;
+                color: $txt-color;
+            }
+
+            .dots--sizing {
+                width:25px;
+                height:25px;
+            }
+
+/*_______________________________________________MAIN________________________________________________*/
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+    .main__title {
+        display: flex;
+    }
+        .main__title--style {
+            font-family: $title-font;
+            color: $txt-color;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 84px;
+            line-height: 102px;
+            letter-spacing: -2px;
+        }
+
+    .main__text {
+        display: flex;
+    }
+        .main__text--style {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 34px;
+            text-align: center;
+            color: $txt-color;
+        }
+        
+    .main__image {
+        display: flex;
+    }    
+
+    /*watch responsive IMG video*/
+        .main__img--size {
+            min-height: 486px;
+            max-width: 864px;
+            width: 100%;
+            border-radius: 0px;
+        }
+

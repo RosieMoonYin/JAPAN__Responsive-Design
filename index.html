@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--FONT-->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width-devicewidth, initial-scale=1.0">
+     <title>Genesis project</title> 
+     <link rel = "stylesheet" href="styles/normalize.css">
+     <link rel = "stylesheet" href="styles/index.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="logo--sizing" src="images/Logo.png">
+        </div>
+
+        <nav class="header__nav">
+           <ul class="header__nav--ul">
+                <li class="header__nav--li"><a href="#">Works</a></li>
+
+                <li class="header__nav--li"><a href="#">Services</a></li>
+
+                <li class="header__nav--li"><a href="#">Contacts</a></li>
+                <li><img class="dots--sizing" src="images/dots.png"></li>
+           </ul>
+
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <div class="main__title">
+            <h1 class="main__title--style">Japan</h1>
+        </div>
+
+        <div class="main__text">
+            <p class="main__text--style">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
+                                            Donec viverra eleifend lacus, vitae ullamcor.</p>
+        </div>
+
+        <div class="main__image">
+            <!--MAKING THE MOUNTAIN IMG RESPONSIVE-->
+            <picture>
+                <source media="(min-width: 320px) and (max-width: 480px)" srcset="/images/Mountain.png">
+                <source media="(min-width: 480px) and (max-width: 805px)" srcset="/images/Mountain.png">
+                <source media="(min-width: 805px)" srcset="/images/Mountain.png">
+                <img class="main__img--size" src="/images/Mountain.png">
+            </picture>
+        </div>
+
+    </main>
+
+</body>
+</html>
