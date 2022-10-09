@@ -32,10 +32,11 @@ a:link {
     justify-content: space-between;
 }
 
+/*___________curious why the logo is so far on the left__________*/
     .header__logo {
         display:flex;
-        justify-self: flex-start;
         margin: 10px;
+        margin-left: 30px;
     }
 
         .logo--sizing {
