@@ -119,6 +119,12 @@ a:link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(../images/Mountain.png);
+  background-size: cover;
+  min-height: 486px;
+  max-width: 864px;
+  width: 100%;
+  border-radius: 0px;
 }
 
 /*watch responsive IMG video*/
@@ -128,3 +134,73 @@ a:link {
   width: 100%;
   border-radius: 0px;
 }
+
+/*_____________ALL MEDIA QUERIES_____________*/
+/*______________________DESKTOP OPTIMIZED________________________*/
+@media screen and (max-width: 1500px) {
+  .main__title--style {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 84px;
+    line-height: 102px;
+    letter-spacing: -2px;
+  }
+
+  .main__text--style {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+}
+/*______________________TABLET OMPTIMISED_______________________*/
+@media screen and (max-width: 800px) {
+  .main__image {
+    background-image: url(../images/Mountain-tab.png);
+  }
+
+  .main__title--style {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 83px;
+    letter-spacing: -1.6px;
+  }
+
+  .main__text--style {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+/*_______________________MOBILE OPTIMISED_______________________*/
+@media screen and (max-width: 480px) {
+  .main__image {
+    background-image: url(../images/Mountain-mob.png);
+  }
+
+  .main__title--style {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.8px;
+  }
+
+  .main__text--style {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .header__nav--li {
+    display: none;
+  }
+}
+/*_________________________________________*/

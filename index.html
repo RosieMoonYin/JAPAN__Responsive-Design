@@ -2,7 +2,7 @@
 <html lang="en">
 <head><!--FONT-->
      <meta charset="UTF-8">
-     <meta name="viewport" content="width-devicewidth, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Genesis project</title> 
      <link rel = "stylesheet" href="styles/normalize.css">
      <link rel = "stylesheet" href="styles/index.css">
@@ -39,18 +39,27 @@
                                             Donec viverra eleifend lacus, vitae ullamcor.</p>
         </div>
 
+    
+            <!--MAKING THE MOUNTAIN IMG RESPONSIVE
         <div class="main__image">
-            <!--MAKING THE MOUNTAIN IMG RESPONSIVE-->
             <picture>
-                <source media="(min-width: 320px) and (max-width: 480px)" srcset="images/Mountain-mobile.png">
-                <source media="(min-width: 480px) and (max-width: 805px)" srcset="images/Mountain-tablet.png">
+                <source media="(min-width: 320px)" srcset="images/Mountain-mob.png">
+                <source media="(min-width: 480px)" srcset="images/Mountain-tab.png">
                 <source media="(min-width: 805px)" srcset="images/Mountain.png">
-                <img class="main__img--size" src="/images/Mountain.png">
+                <img class="main__img--size" src="images/Mountain.png">
+
+                pasting these two just as example that the same links work with src=
+                <img class="main__img--size" src="images/Mountain-mob.png">
+                <img class="main__img--size" src="images/Mountain-tab.png">
+                
             </picture>
+        </div>-->
+        <div class="main__image">
+            <img src="images/Mountain.png" alt="photo of mount fuji">
         </div>
 
     <!--GRID OVERLAY-->
-    <div>
+        <div>
 
     </div>
     
