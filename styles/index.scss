@@ -3,8 +3,8 @@ $main-font: 'Source Sans Pro', sans-serif;
 $title-font: 'Poppins', sans-serif;
 
 $txt-color: #FFFFFF;
-$bg-color: #000000;
 
+$bg-color: #000000;
 
 
 body {
@@ -63,6 +63,7 @@ a:link {
             .header__nav--li {
                 font-family: $main-font;
                 color: $txt-color;
+
                 padding:5%;
             }
 
@@ -87,7 +88,7 @@ a:link {
         .main__title--style {
             font-family: $title-font;
             color: $txt-color;
-            font-family: 'Poppins';
+            font-family: $title-font;
             font-style: normal;
             font-weight: 500;
             font-size: 84px;
