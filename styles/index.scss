@@ -12,7 +12,7 @@ body {
     background-color: $bg-color;
     margin: auto;
     max-width: 1400px;
-    width:100%;
+    width:90%;
     min-height: 810px;
 }
 a:link {
@@ -24,15 +24,16 @@ a:link {
 /*________________________________________________HEADER____________________________________________*/
 
 .header {
-    max-width: 1100px;
+    max-width: 900px;
     width:100%;
     min-height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin:20px;
 }
 
-/*___________curious why the logo is so far on the left__________*/
+/*___________curious why the logo is so much on the left__________*/
     .header__logo {
         display:flex;
         margin: 10px;
@@ -66,6 +67,8 @@ a:link {
             .dots--sizing {
                 width:25px;
                 height:25px;
+                margin-right: 10px;
+                padding: 5%;
             }
 
 /*_______________________________________________MAIN________________________________________________*/
@@ -94,6 +97,7 @@ a:link {
 
     .main__text {
         display: flex;
+        margin:20px;
     }
         .main__text--style {
             font-family: $main-font;
@@ -108,21 +112,28 @@ a:link {
     .main__image {
         display: flex;
         background-image: url(../images/Mountain.png);
-        background-size:cover;
+        background-size:contain;
         min-height: 486px;
         max-width: 864px;
         width: 100%;
-        border-radius: 0px;
+        margin:20px;
     }    
 
 
 /*_____________ALL MEDIA QUERIES_____________*/
-
-
 /*______________________DESKTOP OPTIMIZED________________________*/
+
 @media screen and (max-width: 1500px) {
 
+    .main__image {
+        display: flex;
+        background-image: url(../images/Mountain.png);
+        height:512px;
+        width:617px;
+        background-size: contain;
+        margin: 20px;
 
+    }
     .main__title--style {
         font-style: normal;
         font-weight: 500;
@@ -141,17 +152,18 @@ a:link {
 
   }
 
+/*______________________TABLET OMPTIMISED at around 764px it starts to look a bit weird with the image and not sure why?_______________________*/
 
-/*______________________TABLET OMPTIMISED_______________________*/
 @media screen and (max-width: 800px) {
 
 
     .main__image {
+        display: flex;
         background-image: url(../images/Mountain-tab.png);
-        background-size:cover;
-        height: 512px;
-        width: 617px;
-        border-radius: 0px;
+        background-size:contain;
+        /*height: 512px;
+        width: 617px;*/
+        margin: 20px;
 
     }
     .main__title {
@@ -186,12 +198,14 @@ a:link {
   @media screen and (max-width: 480px) {
 
     .main__image {
+        display: flex;
         background-image: url(../images/Mountain-mob2.png);
         min-height: 284px auto;
         max-width: 256px auto;
         width:100%;
         border-radius: 0px;
-
+        background-size: contain;
+        margin: 20px;
     }
     .main__title--style {
         font-style: normal;
@@ -212,6 +226,10 @@ a:link {
     .header__nav--li {
         display: none;
         
+    }
+    .dots--sizing {
+        display: flex;
+        padding-right: 10px;
     }
   }
 

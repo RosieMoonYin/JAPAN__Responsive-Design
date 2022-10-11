@@ -3,13 +3,16 @@
 <head><!--FONT-->
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Genesis project</title> 
+     <title>JAPAN RESPONSIVE DESIGN project</title> 
      <link rel = "stylesheet" href="styles/normalize.css">
      <link rel = "stylesheet" href="styles/index.css">
+     <!--font awesome KIT CODE-->
+     <script src="https://kit.fontawesome.com/50e96e9c34.js" crossorigin="anonymous"></script>
      <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!--__________HEADER SECTION (logo + navbar)_________-->
     <header class="header">
         <div class="header__logo">
             <img class="logo--sizing" src="images/Logo.png">
@@ -22,14 +25,16 @@
                 <li class="header__nav--li"><a href="#">Services</a></li>
 
                 <li class="header__nav--li"><a href="#">Contacts</a></li>
-                <li><img class="dots--sizing" src="images/dots.png"></li>
+                <li class="dots--sizing">
+                    <!--used font awesome icon instead see below<img class="dots--sizing" src="images/dots.png"*-->
+                    <i class="fa-solid fa-ellipsis"></i></li>
            </ul>
 
         </nav>
     </header>
 
     <main class="main">
-
+        <!--___________TEXT SECTION (title and subheading)__________-->
         <div class="main__title">
             <h1 class="main__title--style">Japan</h1>
         </div>
@@ -39,31 +44,27 @@
                                             Donec viverra eleifend lacus, vitae ullamcor.</p>
         </div>
 
+
+        <!--___________________IMAGE SECTION__________________-->
+        <div class="main__image">
+        </div>
     
-            <!--MAKING THE MOUNTAIN IMG RESPONSIVE
+            <!--MAKING THE MOUNTAIN IMG RESPONSIVE--The links did not become live when using srcset
+                curious if you see what is wrong? I used media queries instead :)
+
+
         <div class="main__image">
             <picture>
                 <source media="(min-width: 320px)" srcset="images/Mountain-mob.png">
                 <source media="(min-width: 480px)" srcset="images/Mountain-tab.png">
-                <source media="(min-width: 805px)" srcset="images/Mountain.png">
+                <source media="(min-width: 800px)" srcset="images/Mountain.png">
                 <img class="main__img--size" src="images/Mountain.png">
 
                 pasting these two just as example that the same links work with src=
                 <img class="main__img--size" src="images/Mountain-mob.png">
                 <img class="main__img--size" src="images/Mountain-tab.png">
                 
-            </picture>
-        </div>-->
-        <div class="main__image">
-            <img src="images/Mountain.png" alt="photo of mount fuji">
-        </div>
-
-    <!--GRID OVERLAY-->
-        <div>
-
-    </div>
-    
+            </picture>-->
     </main>
-
 </body>
 </html>
